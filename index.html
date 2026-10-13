@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Woodchuck Wood Chuck Calculator</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:3rem">
+  <h1>🪵 How much wood would a woodchuck chuck?</h1>
+  <p>If a woodchuck could chuck wood, it would chuck approximately:</p>
+  <h2 id="wood">…</h2>
+  <button onclick="chuck()">Chuck again</button>
+  <p><small>Scientific estimate: about 700 lbs (NY wildlife biologist, 1988). Results may vary by woodchuck motivation.</small></p>
+  <script>
+    function chuck(){document.getElementById('wood').textContent=(Math.random()*1000).toFixed(1)+' lbs of wood';}
+    chuck();
+  </script>
+</body>
+</html>
